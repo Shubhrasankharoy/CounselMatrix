@@ -1,4 +1,5 @@
 import "./globals.css";
+import AllProviders from "@/components/AllProviders";
 
 
 export const metadata = {
@@ -11,7 +12,11 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
     >
-      <body>{children}</body>
+      <body>
+        <AllProviders>
+          {children}
+        </AllProviders>
+      </body>
     </html>
   );
 }
