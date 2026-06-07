@@ -7,6 +7,7 @@ import {
 import { AUTH_PROVIDERS } from "@/utils/coonstants";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
+import { setUser } from "@/utils/userSlice";
 
 const FEATURES = [
     {
@@ -99,6 +100,8 @@ export default function JoSAALoginPage() {
                 const result = await signInWithPopup(AUTH, provider);
                 const credential = GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
+                console.log(result);
+                
                 const { uid, displayName, email, photoURL } = result.user;
 
                 dispatch(setUser({ uid, displayName, email, photoURL }));

@@ -4,7 +4,7 @@ import otherReducer from "./otherSlice";
 
 const appStore = configureStore({
   reducer: {
-    user: userDetailsReducer,
+    userDetails: userDetailsReducer,
     other: otherReducer
   },
 });

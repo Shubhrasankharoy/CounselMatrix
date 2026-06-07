@@ -14,8 +14,8 @@ export default function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(AUTH, (user) => {
       if (user) {
-        const { uid, displayName, email } = user;
-        dispatch(setUser({ uid, email, displayName }));
+        const { uid, displayName, email, photoURL } = user;
+        dispatch(setUser({ uid, email, displayName, photoURL }));
         router.push("/");
       } else {
         console.log("sign out");

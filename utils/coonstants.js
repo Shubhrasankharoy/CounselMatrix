@@ -19,3 +19,5 @@ export const AUTH_PROVIDERS = [
                                 ),
                             },
                         ]
+
+export const ROWS_PER_PAGE = 8;
