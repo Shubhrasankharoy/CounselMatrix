@@ -21,3 +21,25 @@ export const AUTH_PROVIDERS = [
                         ]
 
 export const ROWS_PER_PAGE = 8;
+export const DATA_API = "/api/csv";
+export const DATA_FILE_NAME = "/josaa_2025_round6.csv";
+export const DEMO_OVERVIEW = "Please be advised that this document constitutes a final enumeration of choices. The candidate is advised to follow his own conscience and intuition to edit the choices as per his  convenience. We are just here to guide the student, facilitating his counseling process. Make sure you go through each and every word of this document carefully to avoid any misunderstandings. Do check the footnotes in the form of ”Word of Advice” at the end of the document."
+export const DEMO_CONSIDERATIONS = "The student has been briefed about the conditions in the colleges mentioned, and this preferential choice filling order has been made with their informed consent."
+export const DEMO_WORD_OF_ADVICE = [
+    "You can change or edit the preferences as per your convenience, this pdf is given to guide you. It is not advised to follow it blindly.",
+    "Make sure you don't skip any single preferences from the above list.",
+    "While choice filling might seem a bit easy, it is a tedious process, you have to be sure while filling any choice.",
+    "Some of the preferences above are Public Private Partnership, thus it is wise enough to consider their fees while doing choice filling. (lF ANY)",
+    "Consider using basic web browsers (say Chrome) to avoid any hindrance while choice filling.",
+    "You can refer to videos available on Gourab Bhaiya's channel for further assistance. All the best for these four years, make sure you don't let these years go in vain."
+]
+export const DEMO_CONFIG = {
+    agencyName: "GOURAB ROY Counselling Helpdesk",
+    mentorName: "Argha Banik",
+    watermark: "GOURAB ROY",
+    date: new Date().toISOString().split("T")[0],
+    counselorName: "Gourab Roy",
+    notes: "",
+}
+
+export const DEMO_CONCLUSION = "All the best for your future, make sure you don't let your college life go in vain.";
